@@ -7,6 +7,6 @@ let firstName = prompt("Введіть Ваше ім'я");
 console.log(firstName);
 let middleName = prompt("Введіть Ваше По-Батькові");
 console.log( middleName);
-let age = prompt("Введіть Ваш вік")
+let age = +prompt("Введіть Ваш вік")
 
 console.log( age + ' ' + 'років');
