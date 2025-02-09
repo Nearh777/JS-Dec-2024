@@ -16,20 +16,20 @@
 
 //2.2 - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
 
-//bookThriller = {
+//let bookThriller = {
 //        title: 'UNDER THE SAME STARS',
 //        pageCount: 480,
 //        genre: 'thriller'
 // }
 //
 //
-// bookMystery = {
+//let bookMystery = {
 //     title: 'A SLANT OF LIGHT',
 //     pageCount: 192,
 //     genre: 'historical mystery'
 // }
 //
-// bookRomance = {
+//let bookRomance = {
 //     title: 'UNLOVED',
 //     pageCount: 464,
 //     genre: 'romance'
@@ -39,7 +39,7 @@
 // Поля об'єкту : title ,pageCount, genre, authors.
 // Поле "автори" - являється  масивом. Кожен автор має поля name та age.
 
-//bookThriller = {
+//let bookThriller = {
 //     title: 'UNDER THE SAME STARS',
 //     pageCount: 480,
 //     genre: 'thriller',
@@ -47,14 +47,14 @@
 // }
 //
 //
-// bookMystery = {
+//let bookMystery = {
 //     title: 'A SLANT OF LIGHT',
 //     pageCount: 192,
 //     genre: 'historical mystery',
 //     authors: [{name: 'Laura Whitcomb', age: 66}]
 // }
 //
-// bookRomance = {
+//let bookRomance = {
 //     title: 'UNLOVED',
 //     pageCount: 464,
 //     genre: 'romance',
@@ -65,7 +65,7 @@
 //2.4 - Створити масив з 10 об'єктами які описують сутніть "користувач".
 // Поля: name, username,password. Вивести в консоль пароль кожного користувача
 
-//users = [
+//let users = [
 //     {
 //         name: 'Serhii',
 //         userName: 'serg',
@@ -134,7 +134,7 @@
 // Як зробити цей масив - вам потрібно подумати. Нормальних варіантів опису - 2.
 // Варіант, коли в вас буде одновимірний масив з 21 значенням вичключаємо одразу
 
-//weather = [
+//let weather = [
 // {
 // day: ‘monday’,
 // temperatureInTheMorning: 5,
