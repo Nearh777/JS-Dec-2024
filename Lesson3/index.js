@@ -171,23 +171,24 @@ let users = [
     {name: 'max', age: 31, status: true}
 ];
 
-//for (let user of users) {
-//     document.write(user)
-//     for (let fieldName in user) {
-//         if (user["status"]) {
-//             document.write(`user[fieldName]`);
-//         }
+
+
+// for (const user of users) {
+//     if (user.status) {
+//         console.log(user);
+//     }
+// }
+
+// for (const user of users) {
+//     if (!user.status) {
+//         console.log(user);
 //     }
 // }
 
 for (const user of users) {
-    for (const fieldName in user) {
-        console.log(user['status']);
-        if (user['status']) {
-            document.write(user['name']);
-        }
+    if (user.age > 30) {
+        console.log(user);
     }
-    console.log(" ");
 }
 
 
