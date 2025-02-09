@@ -35,3 +35,14 @@
 
 // #SIdMd0hQ
 //4.4 - створити функцію яка приймає масив та виводить кожен його елемент
+
+function outputsArray(arr) {
+
+  for (const arrElement of arr) {
+
+        console.log(arrElement);
+    }
+}
+
+
+outputsArray([1, 5, 7, 8, 9]);
