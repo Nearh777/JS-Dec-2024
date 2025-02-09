@@ -75,6 +75,7 @@
 //4.7 - створити функцію яка створює ul з  елементами li.
 // Текст li задати через аргумент всім однаковий.
 // Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл) та виводить його через document.write
+//Зроблено за допомогою відеорозв'язку
 
 //function outputList(text, quantity) {
 //     document.write(`<ul>`);
@@ -139,3 +140,66 @@
 //#pghbnSB
 //4.10 - створити функцію яка повертає найменьше число з масиву
 
+//function arrayMinNumber(arr) {
+//     let min = arr[0];
+//     for (let i = 0; i < arr.length; i += 1){
+//         let number = arr[i];
+//         if(number < min) {
+//             min = number;
+//         }
+//
+//     }
+//     return min;
+// }
+//
+// document.write('Найменьше число в масиві дорівнює: ', arrayMinNumber([33, 45, -25, 123, 67, 89]));
+
+//#EKRNVPM
+//4.11 - створити функцію sum(arr) яка приймає масив чисел,
+// сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
+
+//function sum(arr) {
+//     let result = 0;
+//     for (let i = 0; i < arr.length; i += 1) {
+//         result += arr[i];
+//     }
+//     return result;
+// }
+//
+//
+// console.log(sum([3, 3, 4, 5, 20, 5]));
+//
+// document.write('Сума чисел масиву дорівнює: ', sum([3, 3, 4, 5, 20, 5]));
+
+//#kpsbSQCt2Lf
+//4.12 - створити функцію swap(arr,index1,index2). Функція міняє місцями значення у відповідних індексах
+// Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
+//Зроблено за допомогою відеорозв'язку
+
+//function swap(arr, index1, index2) {
+//     let temp = arr[index1];
+//     arr[index1] = arr[index2];
+//     arr[index2] = temp;
+//     return arr;
+// }
+//
+// document.write(swap([11,22,33,44],0,1) );
+
+//#mkGDenYnNjn
+//4.13 - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
+// Приклад exchange(10000,[{currency:'USD',value:25},{currency:'EUR',value:42}],'USD') // => 400
+
+//function exchange(sumUAH,currencyValues,exchangeCurrency) {
+//     let chosenCurrency;
+//     for (const item of currencyValues) {
+// if(item.currency === exchangeCurrency) {
+//     chosenCurrency = item;
+// }
+//     }
+//
+//     let result = sumUAH / chosenCurrency.value;
+//
+//     return result;
+// }
+//
+// document.write(exchange(10000,[{currency:'USD',value:25},{currency:'EUR',value:42}],'USD'));
