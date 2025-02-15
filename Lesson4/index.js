@@ -16,19 +16,18 @@
 
 
 //function squareCircle(r) {
-//     const result = Math.PI * Math.pow(r, 2)
-//     return console.log(`Площа кола дорівнює S = ${result}`);
-// }
+//     return Math.PI * Math.pow(r, 2);
 //
+//  }
 //
-// squareCircle(2);
+//  squareCircle(2);
 
 //#Mbiz5K4yFe7
 //4.3 - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
 
 // function squareCylinder(r, h) {
-//     const result = 2 * Math.PI * r * (h + r);
-//     return console.log(`Площа кола дорівнює S = ${result}`);
+//
+//     return 2 * Math.PI * r * (h + r);
 // }
 //
 // squareCylinder(3, 5);
@@ -177,13 +176,13 @@
 //Зроблено за допомогою відеорозв'язку
 
 //function swap(arr, index1, index2) {
-//     let temp = arr[index1];
-//     arr[index1] = arr[index2];
-//     arr[index2] = temp;
-//     return arr;
-// }
+//      let temp = arr[index1];
+//      arr[index1] = arr[index2];
+//      arr[index2] = temp;
+//      return arr;
+//  }
 //
-// document.write(swap([11,22,33,44],0,1) );
+//  console.log(swap([11,22,33,44],0,1) );
 
 //#mkGDenYnNjn
 //4.13 - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
@@ -202,4 +201,4 @@
 //     return result;
 // }
 //
-// document.write(exchange(10000,[{currency:'USD',value:25},{currency:'EUR',value:42}],'USD'));
+// console.log(exchange(10000,[{currency:'USD',value:25},{currency:'EUR',value:42}],'USD'));
