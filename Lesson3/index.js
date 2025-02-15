@@ -3,13 +3,13 @@
 'use strict';
 
 
-//for (let i = 1; i < 11; i += 1) {
-//     document.write(`<div><h3>Lorem ipsum dolor.</h3></div>`)
-// }
+//for (let i = 0; i < 10; i += 1) {
+//      document.write(`<div><h3>Lorem ipsum dolor.</h3></div>`)
+//  }
 
 //3.2 - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
 
-//for (let i = 1; i < 11; i += 1) {
+//for (let i = 0; i < 10; i += 1) {
 //     document.write(`<div>
 // <h3>Lorem ipsum dolor. Index - ${i}</h3>
 // </div>`)
@@ -18,18 +18,18 @@
 //3.3 - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
 
 
-//let i = 1;
+//let i = 0;
 //
-//  while ( i < 21) {
-//      document.write(`<h1>Lorem ipsum dolor.</h1>`);
-//      i += 1;
-//  }
+//  while ( i < 20) {
+//     document.write(`<h1>Lorem ipsum dolor.</h1>`);
+//     i += 1;
+// }
 
 //3.3 - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
 
-//let i = 1;
+//let i = 0;
 //
-// while (i < 21) {
+// while (i < 20) {
 //     document.write(`<h1>Lorem ipsum dolor. Index - ${i}</h1>`);
 //     i += 1;
 // }
@@ -57,11 +57,15 @@
 
 //let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
 //
+//     document.write(`<ul>`)
 // for (let item of listOfItems) {
-//     document.write(`<ul>
-// <li>${item}</li>
-// </ul>`)
+//      document.write(
+// `
+//      <li>${item}</li>
+// `
+//      );
 // }
+// document.write(`</ul>`);
 
 //3.5 Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону
