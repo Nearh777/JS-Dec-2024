@@ -114,24 +114,39 @@
 //  =========================
 
 
-let coursesAndDurationArray = [
-    {title: 'JavaScript Complex', monthDuration: 5},
-    {title: 'Java Complex', monthDuration: 6},
-    {title: 'Python Complex', monthDuration: 6},
-    {title: 'QA Complex', monthDuration: 4},
-    {title: 'FullStack', monthDuration: 7},
-    {title: 'Frontend', monthDuration: 4}
-];
+//const coursesAndDurationArray = [
+//     {title: 'JavaScript Complex', monthDuration: 5},
+//     {title: 'Java Complex', monthDuration: 6},
+//     {title: 'Python Complex', monthDuration: 6},
+//     {title: 'QA Complex', monthDuration: 4},
+//     {title: 'FullStack', monthDuration: 7},
+//     {title: 'Frontend', monthDuration: 4}
+// ];
 
-let sortCourses = coursesAndDurationArray.sort((a, b) => b.monthDuration - a.monthDuration);
-console.log(sortCourses);
+//const mapCourses = coursesAndDurationArray
+//         .sort((a, b) => b.monthDuration - a.monthDuration)
+//         .filter((course) => course.monthDuration > 5)
+//         .map((course, index) => {
+//         let newCourse = {
+//         id: index + 1,
+//         title: course.title,
+//         mapCourses: course.monthDuration,
+//
+//         }
+//         return newCourse;
+//         });
+// console.log(mapCourses);
 
-let filterCourses = coursesAndDurationArray.filter((course) => {if(course.monthDuration > 5) return course; })
-console.log(filterCourses);
+//const mapCourses = coursesAndDurationArray
+//     .sort((a, b) => b.monthDuration - a.monthDuration)
+//     .filter((course) => course.monthDuration > 5)
+//     .map((course, index) => ({id: index + 1, ...course}));
+//
+// console.log(mapCourses);
 
 
-//  #bolvdlhP
-//  описати колоду карт (від 6 до туза без джокерів)
+// #bolvdlhP
+//  6.9 - описати колоду карт (від 6 до туза без джокерів)
 //  - знайти піковий туз
 //  - всі шістки
 //  - всі червоні карти
@@ -144,3 +159,148 @@ console.log(filterCourses);
 //     color:'', // 'red','black'
 // }
 
+//  const suits = ['spade', 'diamond','heart', 'clubs'];
+//    const values = ['6', '7', '8', '9', '10','jack','queen','king', 'ace'];
+//
+//    const cards = [];
+//
+//    for (const suit of suits) {
+//        for (const value of values) {
+//           const card = {cardSuit: suit, value: value};
+//           if (suit === 'heart' || suit === 'diamond') {
+//               card.color = 'red';
+//           } else {
+//               card.color = 'black';
+//           }
+//           cards.push(card);
+//        }
+//    }
+//
+//    console.log(cards);
+//
+//
+// console.log(cards.find(card => card.value === 'ace' && card.cardSuit === 'spade') );
+// console.log(cards.filter(card => card.value === '6'));
+// console.log(cards.filter(card => card.color === 'red'));
+// console.log(cards.filter(card => card.cardSuit === 'diamond'));
+// console.log(cards.filter(card => card.cardSuit === 'clubs' && (card.value !== '6' && card.value !== '7' && card.value !== '8')));
+
+
+//#EP5I1UUzAX
+// 6.10 - Взяти описану колоду карт, та за допомоги reduce упакувати всі карти по "мастях" в об'єкт
+// {
+//     spades:[],
+//     diamonds:[],
+//     hearts:[],
+//     clubs:[]
+// }
+
+
+
+//let sortCards = cards.reduce((acc, card) => {
+//     if (card.cardSuit === 'spade') {
+//         acc.spades.push(card);
+//     } if (card.cardSuit === 'diamond') {
+//         acc.diamonds.push(card);
+//     } if (card.cardSuit === 'heart') {
+//         acc.hearts.push(card);
+//     } if (card.cardSuit === 'clubs') {
+//         acc.clubs.push(card);
+//     }
+//
+//     return acc;
+//
+// }, {spades:[], diamonds:[], hearts:[], clubs:[]});
+//
+// console.log(sortCards);
+
+//#4LJn7zBx
+// 6.11 - взяти з arrays.js масив coursesArray
+// --написати пошук всіх об'єктів, в яких в modules є sass
+// --написати пошук всіх об'єктів, в яких в modules є docker
+
+
+
+//const coursesArray = [
+//     {
+//         title: 'JavaScript Complex',
+//         monthDuration: 5,
+//         hourDuration: 909,
+//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
+//     },
+//     {
+//         title: 'Java Complex',
+//         monthDuration: 6,
+//         hourDuration: 909,
+//         modules: ['html',
+//             'css',
+//             'js',
+//             'mysql',
+//             'mongodb',
+//             'angular',
+//             'aws',
+//             'docker',
+//             'git',
+//             'java core',
+//             'java advanced']
+//     },
+//     {
+//         title: 'Python Complex',
+//         monthDuration: 6,
+//         hourDuration: 909,
+//         modules: ['html',
+//             'css',
+//             'js',
+//             'mysql',
+//             'mongodb',
+//             'angular',
+//             'aws',
+//             'docker',
+//             'python core',
+//             'python advanced']
+//     },
+//     {
+//         title: 'QA Complex',
+//         monthDuration: 4,
+//         hourDuration: 909,
+//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
+//     },
+//     {
+//         title: 'FullStack',
+//         monthDuration: 7,
+//         hourDuration: 909,
+//         modules: ['html',
+//             'css',
+//             'js',
+//             'mysql',
+//             'mongodb',
+//             'react',
+//             'angular',
+//             'aws',
+//             'docker',
+//             'git',
+//             'node.js',
+//             'python',
+//             'java']
+//     },
+//     {
+//         title: 'Frontend',
+//         monthDuration: 4,
+//         hourDuration: 909,
+//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
+//     }
+// ];
+
+
+
+//const coursesSass = coursesArray.filter(course => {
+//     return course.modules.includes('sass');
+// })
+//
+// console.log(coursesSass);
+//
+// const coursesDocker = coursesArray.filter(course => {
+//     return course.modules.includes('docker');
+// });
+//
+// console.log(coursesDocker);
