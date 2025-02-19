@@ -5,30 +5,30 @@
 // створити пустий масив, наповнити його 10 об'єктами new User(....)
 
 
-//function User(id, name, surname, email, phone) {
-//     this.id = id;
-//     this.name = name;
-//     this.surname = surname;
-//     this.email = email;
-//     this.phone = phone
-//
-// }
+function User(id, name, surname, email, phone) {
+     this.id = id;
+     this.name = name;
+     this.surname = surname;
+     this.email = email;
+     this.phone = phone
+
+ }
 
 
-//const users = [
-//     new User(1,'vasya', 'pupkin', 'asd@asd.com', '380935554345'),
-//     new User(2,'kolya', 'repkin', 'asd@asd.com', '380935554345'),
-//     new User(3,'olya', 'trokin', 'asd@asd.com', '380935554345'),
-//     new User(4,'petya', 'stopkin', 'asd@asd.com', '380935554345'),
-//     new User(5,'sveta', 'dronff', 'asd@asd.com', '380935554345'),
-//     new User(6,'dora', 'kurtz', 'asd@asd.com', '380935554345'),
-//     new User(7,'lisa', 'pupkin', 'asd@asd.com', '380935554345'),
-//     new User(8,'max', 'pupkin', 'asd@asd.com', '380935554345'),
-//     new User(9,'alex', 'pupkin', 'asd@asd.com', '380935554345'),
-//     new User(10,'vasya', 'pupkin', 'asd@asd.com', '380935554345'),
-// ];
-//
-// console.log(users);
+const users = [
+     new User(1,'vasya', 'pupkin', 'asd@asd.com', '380935554345'),
+     new User(2,'kolya', 'repkin', 'asd@asd.com', '380935554345'),
+     new User(3,'olya', 'trokin', 'asd@asd.com', '380935554345'),
+     new User(4,'petya', 'stopkin', 'asd@asd.com', '380935554345'),
+     new User(5,'sveta', 'dronff', 'asd@asd.com', '380935554345'),
+     new User(6,'dora', 'kurtz', 'asd@asd.com', '380935554345'),
+     new User(7,'lisa', 'pupkin', 'asd@asd.com', '380935554345'),
+     new User(8,'max', 'pupkin', 'asd@asd.com', '380935554345'),
+     new User(9,'alex', 'pupkin', 'asd@asd.com', '380935554345'),
+     new User(10,'vasya', 'pupkin', 'asd@asd.com', '380935554345'),
+ ];
+
+ console.log(users);
 
 
 //#2ikXsE2WiKZ
@@ -164,3 +164,121 @@
 // car.changeYear(2015);
 // car.addDriver({});
 // console.log(car);
+
+//#5kla3yMpgp
+// 7.7 - (Те саме, тільки через клас)
+// Створити клас який дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
+// -- drive () - яка виводить в консоль `їдемо зі швидкістю ${максимальна швидкість} на годину`
+//     -- info () - яка виводить всю інформацію про автомобіль в форматі `назва поля - значення поля`
+//     -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
+//     -- changeYear (newValue) - змінює рік випуску на значення newValue
+//     -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
+
+//   class Car {
+//
+//
+//        constructor(model, producer, year, maxSpeed, engineVolume) {
+//            this.model = model;
+//           this.producer = producer;
+//           this.year = year;
+//           this.maxSpeed = maxSpeed;
+//           this.engineVolume = engineVolume;
+//
+//               }
+//
+//        drive()  {
+//               return `їдемо зі швидкістю ${this.maxSpeed} на годину`;
+//           };
+//           info()  {
+//                for (const key in this) {
+//                   console.log(key, this[key]);
+//               }
+//           };
+//           increaseMaxSpeed(newSpeed) {
+//               if(newSpeed > 0 ) this.maxSpeed = this.maxSpeed + newSpeed;
+//
+//           };
+//           changeYear(newYear) {
+//                 if (newYear > 1885)  this.year = newYear;
+//
+//           };
+//           addDriver(driverObject) {
+//               if (driverObject) return this.driver = driverObject;
+//
+//
+//         }
+//    }
+//
+//      const car = new Car('Camry', 'Toyota', '2023', 200, '2353');
+//
+//
+//    console.log(car);
+//    car.drive();
+//    car.info();
+//    car.increaseMaxSpeed(100);
+//    car.changeYear(2015);
+//    car.addDriver({});
+//    console.log(car);
+
+//#zg6Fifnqig
+// 7.8 -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
+// Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
+// За допомоги циклу знайти яка попелюшка повинна бути з принцом.
+// Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
+
+//class Cinderella {
+//
+//     constructor(name, age, footSize) {
+//         this.name = name;
+//         this.age = age;
+//         this.footSize = footSize;
+//     }
+// }
+//
+// const cinderellas = [
+//     new Cinderella('Olia', 23, 35),
+//     new Cinderella('Ella', 21, 34),
+//     new Cinderella('Jane', 26, 36),
+//     new Cinderella('Dora', 28, 37),
+//     new Cinderella('Anne', 22, 38),
+//     new Cinderella('Jess', 21, 33),
+//     new Cinderella('Abigail', 20, 35),
+//     new Cinderella('Diana', 24, 38),
+//     new Cinderella('Eliza', 23, 37),
+//     new Cinderella('Emma', 23, 35)
+//
+// ];
+//
+// class Prince {
+//
+//     constructor(name, age, shoeHeFound) {
+//         this.name = name;
+//         this.age = age;
+//         this.shoeHeFound = shoeHeFound;
+//     }
+//
+// }
+//
+// const prince = new Prince('Jon', 33, 21);
+
+
+
+//for (const cinderella of cinderellas) {
+//     if (cinderella.footSize === prince.shoeHeFound) prince.wife = cinderella;
+// }
+
+//const princeWife = cinderellas.find(cinderella => cinderella.footSize === prince.shoeHeFound);
+//
+// prince.wife = princeWife;
+
+
+
+//#gsKLAsNWM
+// 7.9 - Через Array.prototype. створити власний foreach, filter
+
+
+//Array.prototype.myForEach = function () {
+//     console.log(this);
+//  }
+//
+//     [].myForEach();
