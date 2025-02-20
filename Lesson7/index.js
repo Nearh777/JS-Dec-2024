@@ -5,30 +5,30 @@
 // створити пустий масив, наповнити його 10 об'єктами new User(....)
 
 
-function User(id, name, surname, email, phone) {
-     this.id = id;
-     this.name = name;
-     this.surname = surname;
-     this.email = email;
-     this.phone = phone
+//function User(id, name, surname, email, phone) {
+//       this.id = id;
+//       this.name = name;
+//       this.surname = surname;
+//       this.email = email;
+//       this.phone = phone
+//
+//   }
+//
+//
+//  const users = [
+//      new User(1,'vasya', 'pupkin', 'asd@asd.com', '380935554345'),
+//       new User(2,'kolya', 'repkin', 'asd@asd.com', '380935554345'),
+//       new User(3,'olya', 'trokin', 'asd@asd.com', '380935554345'),
+//       new User(4,'petya', 'stopkin', 'asd@asd.com', '380935554345'),
+//       new User(5,'sveta', 'dronff', 'asd@asd.com', '380935554345'),
+//       new User(6,'dora', 'kurtz', 'asd@asd.com', '380935554345'),
+//       new User(7,'lisa', 'pupkin', 'asd@asd.com', '380935554345'),
+//       new User(8,'max', 'pupkin', 'asd@asd.com', '380935554345'),
+//       new User(9,'alex', 'pupkin', 'asd@asd.com', '380935554345'),
+//       new User(10,'vasya', 'pupkin', 'asd@asd.com', '380935554345'),
+//   ];
 
- }
-
-
-const users = [
-     new User(1,'vasya', 'pupkin', 'asd@asd.com', '380935554345'),
-     new User(2,'kolya', 'repkin', 'asd@asd.com', '380935554345'),
-     new User(3,'olya', 'trokin', 'asd@asd.com', '380935554345'),
-     new User(4,'petya', 'stopkin', 'asd@asd.com', '380935554345'),
-     new User(5,'sveta', 'dronff', 'asd@asd.com', '380935554345'),
-     new User(6,'dora', 'kurtz', 'asd@asd.com', '380935554345'),
-     new User(7,'lisa', 'pupkin', 'asd@asd.com', '380935554345'),
-     new User(8,'max', 'pupkin', 'asd@asd.com', '380935554345'),
-     new User(9,'alex', 'pupkin', 'asd@asd.com', '380935554345'),
-     new User(10,'vasya', 'pupkin', 'asd@asd.com', '380935554345'),
- ];
-
- console.log(users);
+//  console.log(users);
 
 
 //#2ikXsE2WiKZ
@@ -276,9 +276,36 @@ const users = [
 //#gsKLAsNWM
 // 7.9 - Через Array.prototype. створити власний foreach, filter
 
-
-//Array.prototype.myForEach = function () {
-//     console.log(this);
-//  }
+//Array.prototype.myForEach = function (callback) {
 //
-//     [].myForEach();
+//      for (const item of this) {
+//           callback(item);
+//      }
+//
+// }
+//     [2, 3, 4, 5 ].myForEach(( x )=> console.log(x));
+
+//const users = [
+//      {name: 'vasya', age:33},
+//      {name: 'vasya', age:35},
+//      {name: 'vasya', age:37},
+//      {name: 'vasya', age:33}
+// ]
+//
+// Array.prototype.myFilter = function (callback){
+//      const arr = [];
+//      for (const item of this) {
+// if (callback(item)) {
+// arr.push(item);
+// }
+//      }
+//      return arr;
+// }
+//
+//
+// const result = users.myFilter((user) => user.age);
+//
+// console.log(result);
+
+
+
