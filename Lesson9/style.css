@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+.wrap {
+    width: 300px;
+    height: 700px;
+
+
+}
+
+.collapse {
+    width: 300px;
+    height: 700px;
+    background-color: palegoldenrod;
+}
+
+.alpha {
+    width: 300px;
+    height: 700px;
+    ;
+
+}
+
+.beta {
+    width: 300px;
+    height: 700px;
+    border: 1px solid;
+}
+
+.menu {
+    font-family: "Roboto Slab", serif;
+    font-size: 24px;
+    list-style-type: none;
+    color: #2b7f63;
+}
+
+.courseStyle {
+    font-family: "Roboto Slab", serif;
+    font-size: 24px;
+}
+
+.heading {
+    font-family: "Roboto Slab", serif;
+    font-size: 24px;
+    color: darkgray;
+}
+
+.description {
+    font-family: "Roboto Slab", serif;
+    font-size: 18px;
+    color: cadetblue;
+}
