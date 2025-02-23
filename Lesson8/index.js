@@ -47,7 +47,7 @@ console.log(copyObjFun(user));
 
 
 //#iz6emEsP2BA
-// - є масив
+// 8.2 - є масив
 let coursesAndDurationArray = [
     {title: 'JavaScript Complex', monthDuration: 5},
     {title: 'Java Complex', monthDuration: 6},
@@ -60,3 +60,8 @@ let coursesAndDurationArray = [
 //за допомоги map перетворити кожен елемент на наступний тип {id,title,monthDuration
 //     Зробити все ВИКЛЮЧНО за допомоги інлайн конструкції
 
+
+const newCoursesAndDurationArray = coursesAndDurationArray.map((course, index) =>
+       ({...course, id: index + 1}));
+
+console.log(newCoursesAndDurationArray);
