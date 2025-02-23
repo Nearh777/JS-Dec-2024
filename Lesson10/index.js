@@ -1,6 +1,5 @@
 'use strict';
 
-
 //#sH8c4er
 // 10.1 - Створити довільний елемент з id = text та створити кнопку.
 // Використовуючи JavaScript, зробіть так, щоб при натисканні на кнопку зникав елемент з id="text".
@@ -37,3 +36,21 @@
 //#j693ca8
 // 10.2 - створити інпут який приймає вік людини та кнопку яка підтверджує дію.
 // При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
+
+// let form = document.forms.f1;
+//
+// form.onsubmit = function (e) {
+//     e.preventDefault();
+//     if (this.userAge.value < 18) {
+//
+//        let p = document.createElement('p');
+//        p.textContent = 'Warning Your Age < 18!!!';
+//         document.body.appendChild(p);
+//     } else {
+//         let p = document.createElement('p');
+//        p.textContent = 'Success!!!';
+//         document.body.appendChild(p);
+//     }
+
+
+// }
