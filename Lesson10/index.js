@@ -54,3 +54,48 @@
 
 
 // }
+
+//#ymAmN2xJ
+// 10.3 - Стоврити форму з трьома полями для name,sruname,age та кнопкою.
+// При натисканні на кнопку зчитати данні з полів, та вивести об'єкт в документ.
+// Іншими словами : заповниои форму, натиснули кнопку, під формою з'явився блок з вашим об'єктом
+
+// const sendForm = document.querySelector('.form');
+//
+// sendForm.addEventListener('submit', handleSubmit);
+//
+// function handleSubmit(e) {
+//     e.preventDefault();
+//     const form = e.target;
+//     const name = form.elements.name.value;
+//     const surname = form.elements.surname.value;
+//     const age = form.elements.age.value;
+//
+//     if (name === "" || surname === "" || age === "") {
+//                let p = document.createElement('p');
+//        p.textContent = 'Please fill in all the fields!';
+//         return (document.body.appendChild(p));
+//     }
+//     let p = document.createElement('p');
+//     p.textContent = `UserName: ${name}, Surname: ${surname}, Age: ${age}`;
+//     document.body.appendChild(p);
+//     form.reset();
+//
+// }
+
+// #2VaLt4vDczH
+// 10.4 -  є сторінка, на якій є блок, я кому знаходиьтся цифра.
+// написати код, який при кожному перезавантажені сторінки буде додавати до неї +1
+
+
+
+
+
+
+
+
+
+
+
+
+

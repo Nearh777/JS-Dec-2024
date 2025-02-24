@@ -20,3 +20,26 @@
     color: white;
     background-color: cadetblue;
 }
+
+
+.form {
+
+    padding: 32px;
+
+}
+
+.input {
+    border: 1px solid darkgray;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.btn {
+    width:120px;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    background-color: #7ff3f3;
+
+}
+
