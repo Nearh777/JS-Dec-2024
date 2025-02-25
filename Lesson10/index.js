@@ -87,7 +87,27 @@
 // 10.4 -  є сторінка, на якій є блок, я кому знаходиьтся цифра.
 // написати код, який при кожному перезавантажені сторінки буде додавати до неї +1
 
+// const box = document.querySelector('.box');
+const boxCount = document.getElementById('box-count');
 
+let count = 0;
+
+ boxCount.addEventListener('load', counterFunc);
+
+function counterFunc () {
+    count += 1;
+    localStorage.setItem('counter', JSON.stringify(count));
+    let counterLoc = JSON.parse(localStorage.getItem('counter'))
+   return boxCount.textContent = counterLoc;
+}
+
+
+// boxCount.onload = function () {
+//         count += 1;
+//         localStorage.setItem('counter', JSON.stringify(count));
+//      boxCount.textContent = count;
+//      console.log(count);
+// }
 
 
 

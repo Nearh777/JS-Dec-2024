@@ -43,3 +43,12 @@
 
 }
 
+.box__count {
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 10em;
+    border-radius: 15px;
+    background-color: palegoldenrod;
+}
