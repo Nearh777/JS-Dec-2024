@@ -88,23 +88,46 @@
 // написати код, який при кожному перезавантажені сторінки буде додавати до неї +1
 
 
-// Отримуємо поточне значення з localStorage
-// let count = localStorage.getItem('page_count') || 0;
+
+// let counter = +localStorage.getItem('number');
+// counter += 1;
+// localStorage.setItem('number', counter);
+// document.getElementById('counter-title').textContent = counter;
+
+
+
+// #LhSfdhM3
+// 10.5 - Є сторінка index.html (назва довільна), при відвідуванні якої в локальне сховще,
+// в масив sessionsList зберігається інформація про дату та час відвідування сторінки.
+// Є  сторінка sessionsListPage.html (назва довільна), при відвідуванні якої потрібно відмалювати всю
+// інформацію про відвідування сторінки index.html. Інфу НЕ виводити в консоль, а малювати в DOM
+
+
+// let sessionsList = JSON.parse(localStorage.getItem('sessionsList')) || [];
 //
-// // Збільшуємо значення на 1
-// count++;
+//     sessionsList.push(new Date());
 //
-// // Зберігаємо нове значення в localStorage
-// localStorage.setItem('page_count', count);
+//     localStorage.setItem('sessionsList', JSON.stringify(sessionsList));
+
+
+// #Jg0gPO00
+// 10.6 - створити конвертор ваги з кг в фунти.
+// данні заповнюються через інпут.
+// При введенні даних обрахунок стається миттєво, без натискань додаткових кнопок
+
+
+// document.addEventListener('keydown', handleKeyDown);
+//
+// function handleKeyDown (e) {
+//     console.log(+e.key * 2.2);
+//     let  converter = (+e.key * 2.2);
+//     const div = document.createElement('div')
+//     const input = document.querySelector('.input');
+//     div.innerText = converter ;
+//     document.body.appendChild(div);
+//     onreset(' ');
 //
 //
-// // Відображаємо значення на сторінці
-// document.addEventListener("DOMContentLoaded", handleLoad);
-//
-//
-//
-// function handleLoad () {
-//     document.getElementById("counter").textContent = count;
 // }
 
 
@@ -115,3 +138,27 @@
 
 
 
+//#RbQGnH5DuC
+// В localStorage зберігаються масиви. Вам потрібно зробити функцію, які дістає потрібний вам масив з localStorage та додає в нього об'єкт
+// сигнатура функції -
+// addToLocalStorage(arrayName:string,objToAdd:any{}):void
+//
+//
+// #kUSgFqWY
+//  Створити 3 інпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
+// При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
+//
+//
+// #bq1zkx7WP
+// *** (подібне було вище, але...будьте уважні в другій частині) створити сторінку з довільним блоком, в середині якого є значення "100грн"
+// при перезавантаженні сторінки до значаення додається по 10грн, але !!!
+//  зміна ціни відбувається тільки на перезавантаження, які відбулись пізніше ніж 10 секунд після попереднього.
+//  При перезавантаженні, яке відбулось раніше ніж минуло 10 секунд - нічого не відбувається
+//
+//
+// #NKB0tgWIK1G
+// ***PAGINATION
+// зробити масив на 100 об'єктів та дві кнопки prev next
+// при завантажені сторінки з'являються перші 10 об'єктів.
+// При натисканні next виводяться наступні 10 об'єктів
+// При натисканні prev виводяться попередні 10 об'єктів
