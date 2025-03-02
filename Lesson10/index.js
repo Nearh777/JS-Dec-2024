@@ -116,37 +116,80 @@
 // При введенні даних обрахунок стається миттєво, без натискань додаткових кнопок
 
 
-// document.addEventListener('keydown', handleKeyDown);
+// const input = document.getElementById('converter');
+// const resultDiv = document.getElementById('result');
 //
-// function handleKeyDown (e) {
-//     console.log(+e.key * 2.2);
-//     let  converter = (+e.key * 2.2);
-//     const div = document.createElement('div')
-//     const input = document.querySelector('.input');
-//     div.innerText = converter ;
-//     document.body.appendChild(div);
-//     onreset(' ');
-//
-//
+// input.oninput = function  () {
+//     console.log(this.value);
+//     resultDiv.textContent = +this.value * 2.2;
 // }
 
 
 
-
-
-
-
-
-
 //#RbQGnH5DuC
-// В localStorage зберігаються масиви. Вам потрібно зробити функцію, які дістає потрібний вам масив з localStorage та додає в нього об'єкт
-// сигнатура функції -
-// addToLocalStorage(arrayName:string,objToAdd:any{}):void
+// 10.7 -  В localStorage зберігаються масиви. Вам потрібно зробити функцію,
+// які дістає потрібний вам масив з localStorage та додає в нього об'єкт
+// сигнатура функції - addToLocalStorage(arrayName:string,objToAdd:any{}):void
+
+// function addToLocalStorage(arrayName, objToAdd) {
+//     const lsItem = localStorage.getItem(arrayName);
+//     if (!lsItem) {
+//         throw new  Error('There is no array in localstorage!');
+//     }
+//
+//     const array = JSON.parse(lsItem);
+//     if (typeof objToAdd === 'object') {
+//         array.push(objToAdd);
+//     }
+//
+//     localStorage.setItem(arrayName, JSON.stringify(array));
+// }
+//
+// addToLocalStorage('sessionsList', {});
+
+
+
+
 //
 //
 // #kUSgFqWY
 //  Створити 3 інпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 // При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
+
+// const table = document.getElementById('table');
+//
+// const tableGeneratorForm = document.forms['tableGeneratorForm'];
+//
+//
+//
+// tableGeneratorForm.addEventListener('submit', handleOnSubmit);
+//
+// function handleOnSubmit(e) {
+//     table.textContent = '';
+//     e.preventDefault();
+//     const linesValue = +e.target.lines.value;
+//     const cellsValue = +e.target.cells.value;
+//     const contentsValue = e.target.contents.value;
+//
+//    for (let i = 0; i < linesValue; i += 1) {
+//        const tr = document.createElement('tr');
+//        for (let j = 0; j < cellsValue; j += 1) {
+//            const td = document.createElement('td');
+//            td.textContent = contentsValue;
+//            tr.appendChild(td);
+//        }
+//
+//        table.appendChild(tr);
+//
+//    };
+//
+//
+// };
+
+
+
+
+
 //
 //
 // #bq1zkx7WP
