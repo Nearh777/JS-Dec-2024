@@ -15,6 +15,43 @@ fetch('https://dummyjson.com/carts')
         for (const cart of carts) {
             const div = document.createElement('div');
             div.classList.add('cart-container');
+            const divWithInfo = document.createElement('div');
+
+            divWithInfo.textContent = `
+            "total": ${cart.total},
+            "discountedTotal": ${cart.discountedTotal},
+            "userId": ${cart.userId},
+            "totalProducts": ${cart.totalProducts},
+            "totalQuantity": ${cart.totalQuantity}
+
+            `;
+
+            const ul = document.createElement('ul');
+            ul.classList.add('list');
+            for (const product of cart.products) {
+            const li = document.createElement('li');
+                li.classList.add('list-item');
+            const info = document.createElement('p');
+
+            info.textContent = `
+             id: ${product.id},
+            "title": ${product.title},
+            "price": ${product.price},
+            "quantity": ${product.quantity},
+            "total": ${product.total},
+            "discountPercentage": ${product.discountPercentage},
+            "discountedTotal": ${product.discountedTotal}
+            `
+            const img = document.createElement('img');
+            img.src = product.thumbnail;
+
+
+                li.append(img, info);
+                ul.appendChild(li);
+            }
+
+            div.append(divWithInfo, ul);
+            cartsDiv.appendChild(div);
 
         }
 
@@ -22,19 +59,6 @@ fetch('https://dummyjson.com/carts')
     });
 
 
-
-
-
-// {
-//     "id": 124,
-//     "title": "iPhone X",
-//     "price": 899.99,
-//     "quantity": 4,
-//     "total": 3599.96,
-//     "discountPercentage": 8.03,
-//     "discountedTotal": 3310.88,
-//     "thumbnail": "https://cdn.dummyjson.com/products/images/smartphones/iPhone%20X/thumbnail.png"
-// },
 
 
 // #whXxOBlYS0H
