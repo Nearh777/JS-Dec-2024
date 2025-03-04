@@ -92,3 +92,16 @@ button {
     display: flex;
     flex-direction: column;
 }
+
+img {
+    width: 350px;
+    height: auto;
+}
+
+.recipe-container {
+    display: flex;
+    justify-content: revert;
+    flex-direction: column-reverse;
+
+}
+
