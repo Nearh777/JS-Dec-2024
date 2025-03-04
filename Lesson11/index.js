@@ -94,8 +94,7 @@ fetch('https://dummyjson.com/recipes')
             reviewCount: ${recipe.reviewCount},
             servings: ${recipe.servings},
             tags: ${recipe.tags},
-            userId: ${recipe.userId},
-            ingredients: ${recipe.ingredients}         
+            userId: ${recipe.userId},      
             
             `
 
