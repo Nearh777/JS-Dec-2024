@@ -34,40 +34,46 @@
 //   },
 
 
-fetch('https://jsonplaceholder.typicode.com/users')
-    .then(response => response.json())
-    .then((arrayUsers) => {
-        console.log(arrayUsers)
+// fetch('https://jsonplaceholder.typicode.com/users')
+//     .then(response => response.json())
+//     .then((arrayUsers) => {
+//
+//         const usersDiv = document.querySelector('.wrapper-users');
+//
+//
+//         for (const user of arrayUsers) {
+//             const {name, id} = user;
+//             const userDiv = document.createElement('div');
+//             const title = document.createElement('h3');
+//             const userId = document.createElement('p');
+//             const buttonUserInfo = document.createElement('a');
+//
+//             buttonUserInfo.classList.add('button-user__info');
+//             userDiv.classList.add('user-card');
+//             title.textContent = `${name}`;
+//             userId.textContent = `id: ${id}`;
+//             buttonUserInfo.textContent = `Info`;
+//             buttonUserInfo.onclick = function (e) {location.href=`./user-details.html?userId=${id}`};
+//             userDiv.append(title, userId, buttonUserInfo);
+//
+//
+//             usersDiv.appendChild(userDiv);
+//         }
+//
+//     });
 
-        const usersDiv = document.querySelector('.wrapper-users');
-
-
-        for (const user of arrayUsers) {
-            const {name, id} = user;
-            const userDiv = document.createElement('div');
-            const title = document.createElement('h3');
-            const userId = document.createElement('p');
-            const buttonUserInfo = document.createElement('a');
-
-            buttonUserInfo.classList.add('button-user__info');
-            userDiv.classList.add('user-card');
-            title.textContent = `${name}`;
-            userId.textContent = `id: ${id}`;
-            buttonUserInfo.textContent = `Info`;
-            buttonUserInfo.href = `https://user-details.html?userId=${user.id}`
-            userDiv.append(title, userId, buttonUserInfo);
-
-
-            // userDiv.classList.add("user-card");
-            // userDiv.textContent = `
-            //         <h3><strong>Name:</strong> ${user.name}</h3>
-            //         <p><strong>ID:</strong> ${user.id}</p>
-            //         <a href="user-details.html?id=${user.id}">View Details</a>
-            // `
-
-
-            usersDiv.appendChild(userDiv);
-        }
-
+document.addEventListener("DOMContentLoaded", async () => {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+    const users = await response.json();
+    const container = document.getElementById("users-container");
+    users.forEach(user => {
+        const userDiv = document.createElement("div");
+        userDiv.classList.add("user-card");
+        userDiv.innerHTML = `
+                    <p><strong>ID:</strong> ${user.id}</p>
+                    <p><strong>Name:</strong> ${user.name}</p>
+                    <a href="user-details.html?id=${user.id}">View Details</a>
+                `;
+        container.appendChild(userDiv);
     });
-
+});
