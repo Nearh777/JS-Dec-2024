@@ -62,18 +62,38 @@
 //
 //     });
 
-document.addEventListener("DOMContentLoaded", async () => {
-    const response = await fetch("https://jsonplaceholder.typicode.com/users");
-    const users = await response.json();
-    const container = document.getElementById("users-container");
-    users.forEach(user => {
-        const userDiv = document.createElement("div");
-        userDiv.classList.add("user-card");
-        userDiv.innerHTML = `
-                    <p><strong>ID:</strong> ${user.id}</p>
-                    <p><strong>Name:</strong> ${user.name}</p>
-                    <a href="user-details.html?id=${user.id}">View Details</a>
-                `;
-        container.appendChild(userDiv);
-    });
-});
+// document.addEventListener("DOMContentLoaded", async () => {
+//     const response = await fetch("https://jsonplaceholder.typicode.com/users");
+//     const users = await response.json();
+//     const container = document.getElementById("users-container");
+//     users.forEach(user => {
+//         const userDiv = document.createElement("div");
+//         userDiv.classList.add("user-card");
+//         userDiv.innerHTML = `
+//                     <p><strong>ID:</strong> ${user.id}</p>
+//                     <p><strong>Name:</strong> ${user.name}</p>
+//                     <a href="user-details.html?id=${user.id}">View Details</a>
+//                 `;
+//         container.appendChild(userDiv);
+//     });
+// });
+
+ async function user() {
+     const users = await (await fetch("https://jsonplaceholder.typicode.com/users")).json();
+
+
+     const container = document.getElementById("users-container");
+     users.forEach(user => {
+         const userDiv = document.createElement('div');
+         userDiv.classList.add('user-card');
+         userDiv.innerHTML = `
+         <p><strong>ID:</strong> ${user.id}</p>
+         <h3> ${user.name}</h3>
+          <a href="user-details.html?id=${user.id}">View Details</a>
+         `;
+
+         container.appendChild(userDiv);
+     });
+
+ };
+        user();
